@@ -23,7 +23,7 @@ function onInputChange(evt) {
 function onFormSubmit(evt) {
   evt.preventDefault();
 
-  if (emailInputEl !== '' && messageTextareaEl !== '') {
+  if (emailInputEl.value !== '' && messageTextareaEl.value !== '') {
     console.log(feedbackData);
     evt.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
